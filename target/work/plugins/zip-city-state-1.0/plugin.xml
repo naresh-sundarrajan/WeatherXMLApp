@@ -1,0 +1,26 @@
+<plugin name='zip-city-state' version='1.0' grailsVersion='2.0 &gt; *'>
+  <title>Zip City State Plugin</title>
+  <description>Provides utilities to populate the US City and State from the provided 5 digit zip code.</description>
+  <documentation>https://github.com/alexkramer/ZipCityState</documentation>
+  <type>ZipCityStateGrailsPlugin</type>
+  <resources>
+    <resource>BootStrap</resource>
+    <resource>ZipCityStateResources</resource>
+    <resource>zipcitystate.ZipCodeController</resource>
+    <resource>zipcitystate.ZipCode</resource>
+    <resource>zipcitystate.ZipCodeService</resource>
+    <resource>zipcitystate.ZipCodeTagLib</resource>
+  </resources>
+  <repositories>
+    <repository name='grailsCentral' url='http://grails.org/plugins' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+  </repositories>
+  <dependencies />
+  <plugins>
+    <compile>
+      <plugin group='org.grails.plugins' name='jquery' version='1.8.0' />
+    </compile>
+  </plugins>
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>
